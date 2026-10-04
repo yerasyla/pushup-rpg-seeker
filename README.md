@@ -19,10 +19,10 @@ with SOL, straight from your wallet.
 
 | | |
 |---|---|
-| Solana dApp Store | listed as "Pushup RPG" in the Solana dApp Store app on Seeker (no web page for the listing yet) (`com.pushuprpg.solana`, 2.5.9-sol, versionCode 65, live since 2026-09-24) |
+| Solana dApp Store | listed as "Pushup RPG" in the Solana dApp Store app on Seeker (no web page for the listing yet) (`com.pushuprpg.solana`; first released there as 2.5.9-sol, versionCode 65, on 2026-09-24) |
 | Promo video (12 s) | https://www.youtube.com/watch?v=dJzMk57tr-s |
 | Pitch deck | https://pushup.quest/decks/pushup-rpg-investor-overview-2026-09-25.pdf |
-| Signed APK, the same build as the store release | https://github.com/yerasyla/pushup-rpg-seeker/releases/download/v2.5.9-sol-65/PushupRPG-Seeker-2.5.9-sol-65.apk (68 MB, arm64) |
+| Signed APK, the same build as the 2.5.9-sol store release | https://github.com/yerasyla/pushup-rpg-seeker/releases/download/v2.5.9-sol-65/PushupRPG-Seeker-2.5.9-sol-65.apk (68 MB, arm64) |
 | APK SHA-256 | `4672b0f3cda17ba9866446605cad7ef07ac950b3d406b86ab030452255d71b10` |
 | Website | https://pushup.quest |
 
@@ -146,7 +146,7 @@ the server functions were deployed for the first time.
 - Line counts measure volume, not quality. They include tests, translations and data files as well as app code.
 - "Seeker-only code" means the Seeker build's own source, its tests and design note, and its server functions and schema. Seeker work done in
   code that both editions share is not counted there, so that figure is a floor.
-- The live APK was built from a commit dated 2026-09-22. The APK records that commit's id in its own build
+- The 2.5.9-sol APK was built from a commit dated 2026-09-22. The APK records that commit's id in its own build
   metadata, and the same id is a row of the ledger (see *Verifying*, item 3). Commits after that one are not in
   the APK.
 - The same weeks also brought game features that ship in this build: duel clip recording (2026-09-16) and squat
@@ -164,9 +164,10 @@ We know a code-free repository asks judges to take more on trust, so here is wha
    and git will print the same hash, dates and line counts from our repository. Commit dates are written by our own
    machine, so the ledger proves content and order, not time. The date we submitted it to the hackathons is the
    independent upper bound.
-2. **Public release dates.** The Solana dApp Store shows 2.5.9-sol, live since 2026-09-24. The app's App Store and
-   Google Play listings show its earlier releases, which predate the hackathons.
-3. **The app itself.** Install the APK and try it (see below). It is the build released on the store.
+2. **Public release dates.** The app went live on the Solana dApp Store on 2026-09-24, as 2.5.9-sol. The store shows
+   its current version, which can be a later one. The app's App Store and Google Play listings show its earlier
+   releases, which predate the hackathons.
+3. **The app itself.** Install the APK and try it (see below). It is the build released on the store on 2026-09-24.
    `apksigner verify --print-certs` shows who signed it, and `aapt dump badging` shows
    `com.pushuprpg.solana`, 2.5.9-sol, versionCode 65. The Android build tools also record the commit the APK was
    built from: `unzip -p PushupRPG-Seeker-2.5.9-sol-65.apk META-INF/version-control-info.textproto` prints
@@ -181,7 +182,7 @@ We know a code-free repository asks judges to take more on trust, so here is wha
 **You need:**
 
 - An **arm64** Android phone running **Android 8.0 or later**. The Seeker qualifies, as do most current phones. The APK has no 32-bit or x86 code, so an emulator must use an arm64 system image.
-- A **camera**, for rep counting. Without camera permission, a battle falls back to a manual tap counter.
+- A **camera**, for rep counting. Without camera permission a battle does not count reps: the app shows "Camera needed" and a button that opens Settings.
 - For wallet sign-in and SOL passes, a **wallet app that supports Mobile Wallet Adapter**, such as the Seeker's
   built-in wallet, Phantom or Solflare. An emulator has no wallet. You can also play as a guest, or sign in with
   Google or email.

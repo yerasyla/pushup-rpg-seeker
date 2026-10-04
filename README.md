@@ -24,6 +24,7 @@ with SOL, straight from your wallet.
 | Pitch deck | https://pushup.quest/decks/pushup-rpg-investor-overview-2026-09-25.pdf |
 | Signed APK, the same build as the 2.5.9-sol store release | https://github.com/yerasyla/pushup-rpg-seeker/releases/download/v2.5.9-sol-65/PushupRPG-Seeker-2.5.9-sol-65.apk (68 MB, arm64) |
 | APK SHA-256 | `4672b0f3cda17ba9866446605cad7ef07ac950b3d406b86ab030452255d71b10` |
+| Later build | 2.5.12-sol (versionCode 68) is published as its own release, with its own file and SHA-256: https://github.com/yerasyla/pushup-rpg-seeker/releases/tag/v2.5.12-sol-68. The rest of this page describes 2.5.9-sol. |
 | Website | https://pushup.quest |
 
 ---
